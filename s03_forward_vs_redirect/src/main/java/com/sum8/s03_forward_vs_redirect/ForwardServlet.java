@@ -22,7 +22,9 @@ public class ForwardServlet extends HttpServlet {
         //포워드는 응답을 마치지 않고 다른 jsp에게 나머지 요청응답처리를 위임
         String[]fruits={"사과","바나나","딸기","수박","참외","망고스틱"};
         req.setAttribute("fruits", fruits);
-        req.getRequestDispatcher("/forward_test.jsp")
+        //  /WEB-INF 는 배포되지 않는 경로 (외부에서 접근불가)
+        //req.getRequestDispatcher("/forward_test.jsp")
+        req.getRequestDispatcher("/WEB-INF/views/forward_test.jsp")
                 .forward(req, resp);
     }
 }
