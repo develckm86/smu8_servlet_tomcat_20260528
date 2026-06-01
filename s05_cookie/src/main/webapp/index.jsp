@@ -22,6 +22,7 @@
         <li><a href="./getCookies.do">저장된 쿠키 찾기~(a, b)</a></li>
         <li><a href="./removeCookies.do">쿠키삭제 요청~(a, b)</a></li>
         <li><a href="./cookieLogin.do">쿠키 로그인</a></li>
+        <li><a href="./jsCookie.jsp">하루동안보지않기 배너(js로 쿠키 저장 불러오기)</a></li>
     </ul>
 </nav>
 <br/>

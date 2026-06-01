@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>쿠폰지급 배너</title>
+    <style>
+        body{
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>50% 할인쿠폰을 받으세요~~</h1>
+    <p>
+        <label for="checkClose">하루동안보지않기</label>
+        <input type="checkbox" id="checkClose" >
+    </p>
+    <script>
+
+        const checkClose= document.getElementById("checkClose")
+        //click, change, input(text입력) ..
+        checkClose.addEventListener("change",(e)=>{
+            if(e.target.checked){
+                const now=new Date();
+                now.setDate(now.getDate()+1);
+                document.cookie="isBanner=true; path=/; expires="+now.toUTCString();
+                window.close();
+            }
+        });
+    </script>
+
+</body>
+</html>
