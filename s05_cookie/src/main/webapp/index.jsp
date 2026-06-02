@@ -12,7 +12,7 @@
     if(loginId!=null){
 %>
     <p>
-        (<%=loginId%>)<%=loginName%> 님 로그인 /
+        (${loginId})${loginName} 님 로그인 /
         <a href="./cookieLogout.do">로그아웃(쿠키를만료해야함)</a>
     </p>
 <%}%>
@@ -23,6 +23,7 @@
         <li><a href="./removeCookies.do">쿠키삭제 요청~(a, b)</a></li>
         <li><a href="./cookieLogin.do">쿠키 로그인</a></li>
         <li><a href="./jsCookie.jsp">하루동안보지않기 배너(js로 쿠키 저장 불러오기)</a></li>
+        <li><a href="./localStorageTest.jsp">로컬저장소에 데이터 저장 조회 삭제</a></li>
     </ul>
 </nav>
 <br/>
