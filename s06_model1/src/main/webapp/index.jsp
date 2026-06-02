@@ -2,12 +2,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>JSP - Hello World</title>
+    <title>부서관리 model1</title>
 </head>
 <body>
-<h1><%= "Hello World!" %>
-</h1>
+<h1>부서관리 model1</h1>
 <br/>
-<a href="hello-servlet">Hello Servlet</a>
+<nav>
+    <ul>
+        <li><a href="./deptList.jsp">부서리스트</a></li>
+    </ul>
+</nav>
 </body>
 </html>
