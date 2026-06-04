@@ -17,6 +17,7 @@ import java.util.List;
 public class DeptList extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        String page=req.getParameter("page");
         //파라미터처리
         DeptService deptService=new DeptServiceImp();
         try {
