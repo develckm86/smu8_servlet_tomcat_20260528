@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: s09_spring_jpa
+  datasource:
+    url: jdbc:oracle:thin:@localhost:1521/XEPDB1
+    username: scott
+    password: tiger
+    driver-class-name: oracle.jdbc.OracleDriver
+
+server:
+  port: 9999

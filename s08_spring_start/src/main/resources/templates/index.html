@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>스링부트 시작</title>
+</head>
+<body>
+  <h1>스링부트 시작<b th:text="${11*22}"></b></h1>
+  <nav>
+      <ul>
+          <li><a href="/hello.do">안녕 동적리소스~</a></li>
+          <li><a href="/user.do?name=km&age=40">name=km&age=40 파라미터 처리</a></li>
+          <li><a href="/userObj.do?name=km&age=40">name=km&age=40 dto 처리</a></li>
+          <li><a href="/userObj.do?name=km">name=km dto 처리</a></li>
+      </ul>
+  </nav>
+
+</body>
+</html>
